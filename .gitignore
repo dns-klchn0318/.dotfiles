@@ -1,0 +1,18 @@
+# Локальные файлы помощников и редакторов
+.agents/
+.codex/
+CLAUDE.md
+AGENTS.md
+
+# Системные и временные файлы
+.DS_Store
+*.log
+*.swp
+*.swo
+*~
+
+# Локальные секреты и настройки
+.env
+.env.*
+!.env.example
+*.local
