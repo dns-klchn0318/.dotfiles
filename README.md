@@ -13,7 +13,7 @@
 2. Установите [Homebrew](https://brew.sh/) по инструкции на сайте и добавьте его в окружение, как указано установщиком. Затем установите программы:
 
    ```sh
-   brew install git stow zsh tmux starship ghostty zoxide eza bat ripgrep tldr neovim zsh-autosuggestions zsh-syntax-highlighting
+   brew install git stow zsh tmux starship ghostty zoxide eza bat ripgrep tealdeer neovim zsh-autosuggestions zsh-syntax-highlighting
    ```
 
 3. Склонируйте репозиторий:
