@@ -1,0 +1,39 @@
+# ClearDark charcoal with stronger blue-violet accents and a pixel font.
+font-family = "DepartureMono Nerd Font"
+font-size = 16
+
+background = #1c1b22
+foreground = #d0cdd8
+cursor-color = #e5c07b
+cursor-text = #1c1b22
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
+selection-background = #393447
+selection-foreground = #f0edf5
+
+palette = 0=#24232b
+palette = 1=#e06c75
+palette = 2=#98c379
+palette = 3=#e5c07b
+palette = 4=#61afef
+palette = 5=#c678dd
+palette = 6=#56b6c2
+palette = 7=#d0cdd8
+palette = 8=#585663
+palette = 9=#f07882
+palette = 10=#a8d487
+palette = 11=#f0cb87
+palette = 12=#80c5ff
+palette = 13=#dc91ef
+palette = 14=#70cbd8
+palette = 15=#f0edf5
+
+# Add a subtle translucent blur while keeping the palette readable.
+background-opacity = 0.92
+background-blur = true
+bold-color = bright
+window-padding-x = 12
+window-padding-y = 8
+window-padding-balance = true
+mouse-hide-while-typing = true

@@ -1,6 +1,6 @@
 # Dotfiles
 
-Конфигурация рабочего окружения для macOS на Apple Silicon: Zsh, tmux, Starship и Neovim. Файлы устанавливаются через GNU Stow в домашний каталог.
+Конфигурация рабочего окружения для macOS на Apple Silicon: Zsh, tmux, Starship, Ghostty и Neovim. Файлы устанавливаются через GNU Stow в домашний каталог.
 
 ## Установка с нуля
 
@@ -13,7 +13,7 @@
 2. Установите [Homebrew](https://brew.sh/) по инструкции на сайте и добавьте его в окружение, как указано установщиком. Затем установите программы:
 
    ```sh
-   brew install git stow zsh tmux starship zoxide eza bat ripgrep tldr neovim zsh-autosuggestions zsh-syntax-highlighting
+   brew install git stow zsh tmux starship ghostty zoxide eza bat ripgrep tldr neovim zsh-autosuggestions zsh-syntax-highlighting
    ```
 
 3. Склонируйте репозиторий:
@@ -27,20 +27,20 @@
 
    ```sh
    mkdir -p ~/.config
-   stow --simulate --verbose --target="$HOME" zsh tmux starship nvim
-   stow --verbose --target="$HOME" zsh tmux starship nvim
+   stow --simulate --verbose --target="$HOME" zsh tmux starship ghostty nvim
+   stow --verbose --target="$HOME" zsh tmux starship ghostty nvim
    ```
 
 5. Откройте новый терминал или выполните `exec zsh`. При первом запуске `nvim` автоматически установит lazy.nvim и плагины; для этого нужны Git и интернет. Подробности и сочетания клавиш — в [описании Neovim](nvim/.config/nvim/README.md).
 
-Конфигурация рассчитана на Homebrew в `/opt/homebrew` и использует системный буфер macOS в tmux. Для отображения всех значков может понадобиться шрифт с поддержкой Nerd Font. Алиасы Docker и Colima работают после отдельной установки этих программ. Необязательный `tuipo` используется для запуска Codex, только если он установлен.
+Конфигурация рассчитана на Homebrew в `/opt/homebrew` и использует системный буфер macOS в tmux. Ghostty использует пиксельный DepartureMono Nerd Font размером 16 и холодную сине-фиолетовую палитру ClearDark; установите шрифт командой `brew install --cask font-departure-mono-nerd-font`. Алиасы Docker и Colima работают после отдельной установки этих программ. Необязательный `tuipo` используется для запуска Codex, только если он установлен.
 
 ## Обновление и удаление ссылок
 
 ```sh
 cd ~/.dotfiles
 git pull
-stow --restow --target="$HOME" zsh tmux starship nvim
+stow --restow --target="$HOME" zsh tmux starship ghostty nvim
 # Удалить только ссылки:
-stow --delete --target="$HOME" zsh tmux starship nvim
+stow --delete --target="$HOME" zsh tmux starship ghostty nvim
 ```
